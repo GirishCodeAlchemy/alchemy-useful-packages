@@ -8,6 +8,30 @@
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
   <title>Useful Python Packages</title>
+  <style>
+    .custom-modal-dialog {
+      max-width: 80%; /* Set your desired width here */
+    }
+    .modal-body {
+      flex: 1;
+      overflow-y: auto;
+    }
+    .card {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .card  a{
+      flex: 1;
+      object-fit: cover;
+      height: 200px;
+    }
+    .img-fluid {
+      max-width: 100%;
+      height: 90px;
+  }
+  </style>
 </head>
 
 <body class="bg-primary">
@@ -29,6 +53,7 @@
       </div>
     </nav>
 
+
     <article id="page-multicolumn" class="page-section vertical-padding bg-white">
       <header class="container">
         <h2 class="display-4 pt-4 text-center">Useful Python Packages</h2>
@@ -36,73 +61,99 @@
           Explore some essential Python packages for text and image processing. Learn how to enhance your Python projects with
           powerful tools and libraries.
         </p>
+
       </header>
 
-      <section class="container family-sans text-uppercase text-center py-4">
+      <section class="container family-sans  text-center py-4">
         <div class="row justify-content-center py-2">
 
           <!-- Text Processing Section -->
 
           <section class="text-center mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
-            <h4 class="mt-1">Text Processing with colorama and pyfiglet</h4>
-            <a href="https://pypi.org/project/pyfiglet/" target="_blank" rel="noopener noreferrer">
-            <img class="img-fluid rounded" src="assets/pyfiglet.png" alt="Pyfiglet" />
-            </a>
-            <p class="mt-2">Creating Ascii art text in python with Pyfiglet.</p>
-            <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#jupyterNotebookText" aria-expanded="false" aria-controls="jupyterNotebookText">
-              Show Jupyter Notebook
-            </button>
-            <div class="collapse mt-3" id="jupyterNotebookText">
-              <iframe src="https://nbviewer.jupyter.org/github/GirishCodeAlchemy/alchemy-useful-packages/blob/main/python/textProcessing/AlchemyPlaygroundtext.ipynb"
-      height="600" width="100%" title="jupyterNotebookText"></iframe>
+            <div class="card h-100">
+              <h4 class="card-title mt-1">Text Processing with colorama and pyfiglet</h4>
+              <a href="https://pypi.org/project/pyfiglet/" target="_blank" rel="noopener noreferrer">
+              <img class="img-fluid rounded" src="assets/pyfiglet.png" alt="Pyfiglet" />
+              </a>
+                <p class="mt-2">Creating Ascii art text in python with Pyfiglet.</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#jupyterNotebookText">
+                  Show Jupyter Notebook
+                </button>
+              <div class="modal fade" id="jupyterNotebookText" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog custom-modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Jupyter Notebook</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <iframe src="https://nbviewer.jupyter.org/github/GirishCodeAlchemy/alchemy-useful-packages/blob/main/python/textProcessing/AlchemyPlaygroundtext.ipynb"
+                        height="800" width="100%" title="jupyterNotebookText"></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </section>
 
           <!-- Image Processing Section -->
           <section class="text-center mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
-            <h4 class="mt-1">Image Processing with PIL (Pillow)</h4>
+            <div class="card h-100">
+            <h4 class="card-title mt-1">Image Processing with PIL (Pillow)</h4>
             <a href="https://pypi.org/project/pillow/" target="_blank" rel="noopener noreferrer">
               <img class="img-fluid rounded" src="assets/pillow.png" alt="Pillow" />
             </a>
             <p class="mt-2">Image Resizing using pillow package.</p>
-            <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#jupyterNotebookImage" aria-expanded="false"
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#jupyterNotebookImage" aria-expanded="false"
               aria-controls="jupyterNotebookImage">
               Show Jupyter Notebook
             </button>
-            <div class="collapse mt-3" id="jupyterNotebookImage">
-              <iframe src="https://nbviewer.jupyter.org/github/GirishCodeAlchemy/alchemy-useful-packages/blob/main/python/imageProcessing/AlchemyPlayground.ipynb"
-      height="600" width="100%" title="jupyterNotebookImage"></iframe>
+            <div class="modal fade" id="jupyterNotebookImage" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog custom-modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Jupyter Notebook</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <iframe src="https://nbviewer.jupyter.org/github/GirishCodeAlchemy/alchemy-useful-packages/blob/main/python/imageProcessing/AlchemyPlayground.ipynb"
+                      height="800" width="100%" title="jupyterNotebookImage"></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
             </div>
           </section>
 
           <section class="text-center mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
-            <h4 class="mt-1">Display the calendar (In-built)</h4>
+            <div class="card h-100">
+            <h4 class="card-title mt-1">Display the calendar (In-built)</h4>
             <a href="" target="_blank" rel="noopener noreferrer">
               <img class="img-fluid rounded" src="assets/calendar.png" alt="Calendar" />
             </a>
-            <p class="mt-2">Diaplay the calendar using Python.</p>
-            <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#jupyterNotebookCalendar" aria-expanded="false"
+            <p class="mt-2">Display the year calendar.</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#jupyterNotebookCalendar" aria-expanded="false"
               aria-controls="jupyterNotebookCalendar">
               Show Jupyter Notebook
             </button>
-            <div class="collapse mt-3" id="jupyterNotebookCalendar">
-              <iframe src="https://nbviewer.jupyter.org/github/GirishCodeAlchemy/alchemy-useful-packages/blob/main/python/AlchemyPlayground3.ipynb"
-      height="600" width="100%" frameborder="0"></iframe>
+            <div class="modal fade" id="jupyterNotebookCalendar" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog custom-modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Jupyter Notebook</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <iframe src="https://nbviewer.jupyter.org/github/GirishCodeAlchemy/alchemy-useful-packages/blob/main/python/calenderDisplay/AlchemyPlayground.ipynb"
+                      height="800" width="100%" title="jupyterNotebookCalendar"></iframe>
+                  </div>
+                </div>
+              </div>
             </div>
-          </section>
-
-          <section class="text-center mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
-            <!-- Wrap the image inside an anchor tag with the href attribute pointing to the desired link -->
-            <a href="https://pypi.org/project/pip/" target="_blank" rel="noopener noreferrer">
-              <img class="img-fluid rounded" src="https://dummyimage.com/800x400/6/f.png&text=PIP" alt="Pip Package" />
-            </a>
-            <h5 class="mt-1">Pip Package</h5>
-          </section>
-
-          <section class="container family-sans text-uppercase text-center py-4">
-            <!-- Replace the URL below with the public URL of your Jupyter Notebook -->
-            <iframe src="https://nbviewer.jupyter.org/github/GirishCodeAlchemy/alchemy-useful-packages/raw/main/python/AlchemyPlayground.ipynb"
-      height="600" width="100%" frameborder="0"></iframe>
+            </div>
           </section>
         </div>
       </section>
