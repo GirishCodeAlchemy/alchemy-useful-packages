@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
   <title>Useful Python Packages</title>
 </head>
 
@@ -39,25 +40,57 @@
 
       <section class="container family-sans text-uppercase text-center py-4">
         <div class="row justify-content-center py-2">
+
           <!-- Text Processing Section -->
 
           <section class="text-center mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
             <h4 class="mt-1">Text Processing with colorama and pyfiglet</h4>
             <a href="https://pypi.org/project/pyfiglet/" target="_blank" rel="noopener noreferrer">
-            <img class="img-fluid rounded" src="data:image/png;base64,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" alt="Pyfiglet" />
+            <img class="img-fluid rounded" src="assets/pyfiglet.png" alt="Pyfiglet" />
             </a>
             <p class="mt-2">Creating Ascii art text in python with Pyfiglet.</p>
+            <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#jupyterNotebookText" aria-expanded="false" aria-controls="jupyterNotebookText">
+              Show Jupyter Notebook
+            </button>
+            <div class="collapse mt-3" id="jupyterNotebookText">
+              <iframe src="https://nbviewer.jupyter.org/github/GirishCodeAlchemy/alchemy-useful-packages/blob/main/python/textProcessing/AlchemyPlayground.ipynb"
+      height="600" width="100%" title="jupyterNotebookText"></iframe>
+            </div>
           </section>
-
 
           <!-- Image Processing Section -->
           <section class="text-center mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
             <h4 class="mt-1">Image Processing with PIL (Pillow)</h4>
             <a href="https://pypi.org/project/pillow/" target="_blank" rel="noopener noreferrer">
-              <img class="img-fluid rounded" src="https://pypi-camo.freetls.fastly.net/7bc42058d2d94edfcc0533b1566dabea85076a76/68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f707974686f6e2d70696c6c6f772f70696c6c6f772d6c6f676f2f6d61696e2f70696c6c6f772d6c6f676f2d323438783235302e706e67" alt="Pillow" />
+              <img class="img-fluid rounded" src="assets/pillow.png" alt="Pillow" />
             </a>
             <p class="mt-2">Image Resizing using pillow package.</p>
+            <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#jupyterNotebookImage" aria-expanded="false"
+              aria-controls="jupyterNotebookImage">
+              Show Jupyter Notebook
+            </button>
+            <div class="collapse mt-3" id="jupyterNotebookImage">
+              <iframe src="https://nbviewer.jupyter.org/github/GirishCodeAlchemy/alchemy-useful-packages/blob/main/python/imageProcessing/AlchemyPlayground.ipynb"
+      height="600" width="100%" title="jupyterNotebookImage"></iframe>
+            </div>
           </section>
+
+          <section class="text-center mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
+            <h4 class="mt-1">Display the calendar (In-built)</h4>
+            <a href="" target="_blank" rel="noopener noreferrer">
+              <img class="img-fluid rounded" src="assets/calendar.png" alt="Calendar" />
+            </a>
+            <p class="mt-2">Diaplay the calendar using Python.</p>
+            <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#jupyterNotebookCalendar" aria-expanded="false"
+              aria-controls="jupyterNotebookCalendar">
+              Show Jupyter Notebook
+            </button>
+            <div class="collapse mt-3" id="jupyterNotebookCalendar">
+              <iframe src="https://nbviewer.jupyter.org/github/GirishCodeAlchemy/alchemy-useful-packages/blob/main/python/calenderDisplay/AlchemyPlayground.ipynb"
+      height="600" width="100%" frameborder="0"></iframe>
+            </div>
+          </section>
+
           <section class="text-center mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
             <!-- Wrap the image inside an anchor tag with the href attribute pointing to the desired link -->
             <a href="https://pypi.org/project/pip/" target="_blank" rel="noopener noreferrer">
@@ -66,13 +99,11 @@
             <h5 class="mt-1">Pip Package</h5>
           </section>
 
-
           <section class="container family-sans text-uppercase text-center py-4">
             <!-- Replace the URL below with the public URL of your Jupyter Notebook -->
             <iframe src="https://nbviewer.jupyter.org/github/GirishCodeAlchemy/alchemy-useful-packages/blob/main/python/AlchemyPlayground.ipynb"
       height="600" width="100%" frameborder="0"></iframe>
           </section>
-
         </div>
       </section>
     </article>
