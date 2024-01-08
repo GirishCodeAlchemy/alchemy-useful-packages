@@ -1,2 +1,2 @@
-# alchemy-template
-Template for github repositories
+# Alchemy Useful Packages
+Python, Nodejs, Golang
