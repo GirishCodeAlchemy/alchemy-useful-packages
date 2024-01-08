@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"/>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"/>
+  <title>Useful Golang Packages</title>
+  <style>
+    .custom-modal-dialog {
+      max-width: 80%; /* Set your desired width here */
+    }
+    .modal-body {
+      flex: 1;
+      overflow-y: auto;
+    }
+    .card {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .card  a{
+      flex: 1;
+      object-fit: cover;
+      height: 200px;
+    }
+    .img-fluid {
+      max-width: 100%;
+      height: 90px;
+  }
+  </style>
+</head>
+
+<body class="bg-primary">
+  <header id="page-hero" class="d-flex flex-column align-content-between">
+    <nav class="navbar navbar-expand-md bg-primary navbar-dark text-uppercase">
+      <div class="container">
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#myTogglerNav"
+          aria-controls="myTogglerNav" aria-label="Toggle Navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">GirishCodeAlchemy</a>
+        <div class="collapse navbar-collapse" id="myTogglerNav">
+          <div class="navbar-nav ms-auto font-weight-regular">
+            <a class="nav-item nav-link text-white" href="index.html">home</a>
+            <a class="nav-item nav-link" href="python.html">python</a>
+            <a class="nav-item nav-link" href="golang.html">golang</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <article id="page-multicolumn" class="page-section vertical-padding bg-white">
+      <header class="container">
+        <h2 class="display-4 pt-4 text-center">Useful Python Packages</h2>
+        <p class="lead mx-md-5">
+          Explore essential Golang packages, and discover how to enhance your Golang projects with powerful tools and libraries. <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#jupyterNotebook" aria-expanded="false"
+          aria-controls="jupyterNotebook">
+          Complete Jupyter Notebook
+          </button>
+        </p>
+          <div class="modal fade" id="jupyterNotebook" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog custom-modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Jupyter Notebook</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <iframe src="https://nbviewer.jupyter.org/github/GirishCodeAlchemy/alchemy-useful-packages/blob/main/golang/AlchemyPlayground.ipynb?flush_cache=false"
+                    height="800" width="100%" title="jupyterNotebook"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+      </header>
+
+      <!-- <section class="container family-sans  text-center py-4">
+        <div class="row justify-content-center py-2">
+
+          <section class="text-center mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
+            <div class="card h-100">
+              <h4 class="card-title mt-1">Text Processing with colorama and pyfiglet</h4>
+              <a href="https://pypi.org/project/pyfiglet/" target="_blank" rel="noopener noreferrer">
+              <img class="img-fluid rounded" src="assets/pyfiglet.png" alt="Pyfiglet" />
+              </a>
+                <p class="mt-2">Creating Ascii art text in python with Pyfiglet.</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#jupyterNotebookText">
+                  Show Jupyter Notebook
+                </button>
+              <div class="modal fade" id="jupyterNotebookText" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog custom-modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Jupyter Notebook</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <iframe src="https://nbviewer.jupyter.org/github/GirishCodeAlchemy/alchemy-useful-packages/blob/96001a7347f4c8ded5e23c67269d8000273d200e/python/textProcessing/AlchemyPlaygroundtext.ipynb?flush_cache=false"
+                        height="800" width="100%" title="jupyterNotebookText"></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section> -->
+    </article>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </header>
+
+</body>
+
+</html>
