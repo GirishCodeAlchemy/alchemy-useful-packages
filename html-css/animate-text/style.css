@@ -1,0 +1,19 @@
+
+h1{
+    font-size: 6rem;
+    background: url("sample.avif");
+    background-size: 40% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: animate 10s alternate infinite;
+}
+
+@keyframes animate{
+    from{
+        background-position: 0% 80%;
+    }
+    to {
+        background-position: 100% 50%;
+    }
+}
